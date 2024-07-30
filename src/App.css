@@ -197,36 +197,30 @@ img {
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
   }
-  .nav__menu {
-    display: none;
-  }
-  .nav__toggle {
-    display: block;
-  }
-  .nav__list {
-    flex-direction: column;
-    column-gap: 0;
+
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
   }
 }
 
 /* BREAKPOINTS */
-@media screen and (max-width: 768px) {
-  /* Additional responsive styles can be added here */
-  .nav__list {
-    flex-direction: column;
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
   }
+}
+
+@media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 576px) {
-  /* Additional responsive styles can be added here */
-  .nav__list {
-    flex-direction: column;
-  }
 }
 
 @media screen and (max-width: 350px) {
-  /* Additional responsive styles can be added here */
-  .nav__list {
-    flex-direction: column;
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
   }
 }
