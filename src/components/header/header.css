@@ -1,13 +1,14 @@
 .header {
-  width: 100px;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.nav {
+.navbar {
   height: calc(var(--header-height) + 1.5rem);
   display: flex;
   justify-content: space-between;
@@ -19,6 +20,7 @@
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  cursor: pointer;
 }
 
 .nav__list {
@@ -33,7 +35,7 @@
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
-  transition: .3s;
+  transition: color 0.3s;
 }
 
 .nav__close, 
@@ -69,7 +71,7 @@
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     border-radius: 1.5rem 1.5rem 0 0;
-    transition: .3s;
+    transition: bottom 0.3s;
   }
 
   /* Show menu */
@@ -90,7 +92,7 @@
   .nav__close {
     position: absolute;
     right: 1.3rem;
-    bottom: .5rem;
+    bottom: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--title-color);
